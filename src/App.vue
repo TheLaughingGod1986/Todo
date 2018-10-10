@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1 class="ui dividing centered header">Vue.js Todo App</h1>
+    <h1 class="ui dividing centered header">To do Web App</h1>
     <div class='ui three column centered grid'>
       <div class='column'>
         <todo-list v-bind:todos="todos"></todo-list>
@@ -24,22 +24,19 @@ export default {
   data() {
     return {
       todos: [{
-        title: 'Todo A',
+        title: 'test 1',
         project: 'Project A',
         done: false,
       }, {
-        title: 'Todo B',
+        title: 'test 2',
         project: 'Project B',
         done: true,
       }, {
-        title: 'Todo C',
+        title: 'test 3',
         project: 'Project C',
         done: false,
-      }, {
-        title: 'Todo D',
-        project: 'Project D',
-        done: false,
-      }],
+      },
+      ],
     };
   },
   methods: {
@@ -49,4 +46,5 @@ export default {
     },
   },
 };
+
 </script>
